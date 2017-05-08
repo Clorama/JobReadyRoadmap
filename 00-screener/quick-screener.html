@@ -1,6 +1,6 @@
 ---
 layout: application
-title: First, let’s see if you may qualify.
+title: First, let’s start with the most important thing you selected--Housing.
 button_text: Next
 script: |
   <script>
@@ -36,12 +36,13 @@ script: |
 
 <div class="field-group">
 	<div class="question">
-		<p class="question__primary-text"><label for="householdZipCode">What is your zip code?</label></p>
+		<p class="question__primary-text"><label for="householdZipCode">What city are you looking for housing in?</label></p>
 	</div>
 	<div class="response">
 		<input class="input--medium" id="householdZipCode" 	{% include _valid_zipcode.html %} required />
 	</div>
 </div>
+
 
 <div class="snap-only">
 	<div class="field-group">
@@ -63,7 +64,7 @@ script: |
 			<p class="question__secondary-text">This is usually family members who you live with.</p>
 		</div>
 		<div class="response">
-			<input class="input--short" type="number" pattern="\d*" min="1" id="householdSize" data-custom-validity='Please enter minumum of "1" since this number includes you' title='Please enter minumum of "1" since this number includes you' required />
+			<input class="input--short" type="number" pattern="\d*" min="1" id="householdSize" data-custom-validity='Please enter minumum of "1" since this number includes you' title='Please enter minumum of "1" since this number includes you' <!--required--> />
 		</div>
 	</div>
 </div>
@@ -75,7 +76,7 @@ script: |
 			<p class="question__secondary-text">Count your roommates if you often buy food and cook together.</p>
 		</div>
 		<div class="response">
-			<input type="number" class="input--short" pattern="\d*" min="0" id="householdShareMeals" required />
+			<input type="number" class="input--short" pattern="\d*" min="0" id="householdShareMeals" <!--required--> />
 		</div>
 	</div>
 </div>

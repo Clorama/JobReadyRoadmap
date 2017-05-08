@@ -1,6 +1,6 @@
 ---
 layout: application
-title: Select the benefits you would like to apply for.
+title: Select the help you are looking for.
 step: 1
 script: |
   <script>
@@ -14,7 +14,7 @@ script: |
             window.location.href = "quick-screener.html";
           }
           else {
-            alert("Please select one benefit you'd like to apply for. ");
+            alert("Please select one track to job readiness that most closely fits your situation. ");
           }
 
       });
@@ -24,20 +24,35 @@ script: |
 <div class="field-group">
   <fieldset>
     <div class="question">
-      <legend class="question__primary-text">You can apply for all or just one program. Check all the benefits you want to apply for:</legend>
+      <legend class="question__primary-text">You can select one or more tracks. Check all the paths that you would like guidance on:</legend>
     </div>
     <div class="response">
       <ul class="usa-unstyled-list checkbox-group benefit-selection">
         <li>
           <input id="benefitChoiceHealthcare" type="checkbox" name="benefitChoice" value="Text">
-          <label for="benefitChoiceHealthcare">Healthcare Coverage <span class="benefit-name">Medicaid</span> <span class="benefit-description">Free or low-cost health coverage may help pay for medical bills, doctor visits, or prescriptions.</span></label>
+          <label for="benefitChoiceHealthcare">Housing Assistance <span class="benefit-name">Anchorage, AK Listings</span> <span class="benefit-description"> Homeless Shelters, Supportive Housing, Halfway Housing, Transitional Housing, Day Shelters, Low Income Housing, Residential Alcohol and Drug Treatment Centers.</span></label>
         </li>
         <li>
           <input id="benefitChoiceFoodAssistance" type="checkbox" name="benefitChoice" value="Text">
-          <label for="benefitChoiceFoodAssistance">Food Assistance <span class="benefit-name">SNAP</span> <span class="benefit-description">Money for food at supermarkets, farmer’s market, and convenience stores.<br>We can check if you may qualify for 3 day Expedited Service benefit.</span></label>
+          <label for="benefitChoiceFoodAssistance">Immediate Assistance <span class="benefit-name">211 for Emergency Needs</span> <span class="benefit-description">Money for food, transportation, drop-in childcare and more available to you to help you get back on your feet. Call 211 or use this track to point you to the right resource for help.</span></label>
+        </li>
+         <li>
+          <input id="benefitChoiceFoodAssistance" type="checkbox" name="benefitChoice" value="Text">
+          <label for="benefitChoiceFoodAssistance">Identification <span class="benefit-name">ID's and Documentation</span> <span class="benefit-description">Step by step guide to obtaining your social security card, State ID, Birth Certificate, and more.</span></label>
+        </li>
+        <li>
+          <input id="benefitChoiceFoodAssistance" type="checkbox" name="benefitChoice" value="Text">
+          <label for="benefitChoiceFoodAssistance">Understanding Your Conviction <span class="benefit-name">Guided Tutorial</span> <span class="benefit-description">This track will help you understand how your conviction will impact your housing, employment, and public assistance.</span></label>
+        </li>
+        <li>
+          <input id="benefitChoiceFoodAssistance" type="checkbox" name="benefitChoice" value="Text">
+          <label for="benefitChoiceFoodAssistance">Job Search Essentials <span class="benefit-name">Guided Tutorial</span> <span class="benefit-description">On this track, we will guide you on how to create a perfect resume, cover letter, and prepare you to answer the toughest interview questions</span></label>
+        </li>
+
+        <li>
 
           <div class="explainer">
-            <a href="#" class="explainer__toggle" aria-expanded="false" aria-controls="explainer-1">What is 3 Day SNAP Expedited Service?</a>
+            <a href="#" class="explainer__toggle" aria-expanded="false" aria-controls="explainer-1">How will this help me?</a>
             <div class="explainer__content" id="explainer-1">
               <p>To qualify for 3 Day Expedited Service, your income is:</p>
 
